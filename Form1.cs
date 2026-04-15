@@ -1,4 +1,5 @@
 ﻿using MaterialSkin.Controls;
+using Siticone.Desktop.UI.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,15 +19,21 @@ namespace BibliotecaRemake
         public Form1()
         {
             InitializeComponent();
-            erros = new Erros();
-            erros.Dock = DockStyle.Fill;
-            tpErro.Controls.Add(erros);
-            erros.Controls.Find("btnErro", true).First().Click += VoltarTelaPrincipal;
             
-            livros = new Livros();
-            //livros.Dock = DockStyle.Fill;
-            tpLivro.Controls.Add(livros);
-            //Localiza o botao btnErro, verifica se existe, se existir, retorna o primeiro e adiciona a funçao de click
+           
+        }
+        private void MudarCorDeButton()
+        {
+            btnLivro.FillColor = Color.FromArgb(60, 60, 60);
+            btnLivro.ForeColor = Color.White;
+            btnEmprestimo.FillColor = Color.FromArgb(60, 60, 60);
+            btnEmprestimo.ForeColor = Color.White;
+            btnFuncionario.FillColor = Color.FromArgb(60, 60, 60);
+            btnFuncionario.ForeColor = Color.White;
+            btnUsuario.FillColor = Color.FromArgb(60, 60, 60);
+            btnUsuario.ForeColor = Color.White;
+            btnPrincipal.FillColor = Color.FromArgb(60, 60, 60);
+            btnPrincipal.ForeColor = Color.White;
         }
         private void VoltarTelaPrincipal(object quemChama, EventArgs evento)
         {
@@ -34,12 +41,34 @@ namespace BibliotecaRemake
         }
         private void btnErro_Click(object sender, EventArgs e)
         {
-            tcControle.SelectTab(tpErro);
+            throw new NotImplementedException();
         }
 
         private void btnLivros_Click(object sender, EventArgs e)
         {
             tcControle.SelectTab(tpLivro);
+        }
+        private void btnPrincipal_Click(object sender, EventArgs e)
+        {
+            MudarCorDeButton();
+            btnPrincipal.FillColor = Color.FromArgb(200, 200, 200);
+            btnPrincipal.ForeColor = Color.FromArgb(0, 0, 0);
+            tcControle.SelectTab(tpTelaPrincipal);
+            
+        }
+       
+
+        private void btnLivro_Click(object sender, EventArgs e)
+        {
+            MudarCorDeButton();
+            btnLivro.FillColor = Color.FromArgb(200, 200, 200);
+            btnLivro.ForeColor = Color.FromArgb(0, 0, 0);
+            tcControle.SelectTab(tpLivro);
+            livros = new Livros();
+            livros.Dock = DockStyle.Fill;
+            tpLivro.Controls.Add(livros);
+            //Localiza o botao btnErro, verifica se existe, se existir, retorna o primeiro e adiciona a funçao de click
+            
         }
     }
 }
