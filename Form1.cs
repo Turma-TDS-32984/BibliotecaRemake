@@ -16,6 +16,7 @@ namespace BibliotecaRemake
     {
         private Erros erros;
         private Livros livros;
+        private Usuarios usuarios;
         public Form1()
         {
             InitializeComponent();
@@ -69,6 +70,17 @@ namespace BibliotecaRemake
             tpLivro.Controls.Add(livros);
             //Localiza o botao btnErro, verifica se existe, se existir, retorna o primeiro e adiciona a funçao de click
             
+        }
+
+        private void btnUsuario_Click(object sender, EventArgs e)
+        {
+            MudarCorDeButton();
+            btnUsuario.FillColor = Color.FromArgb(200, 200, 200);
+            btnUsuario.ForeColor = Color.FromArgb(0, 0, 0);
+            tcControle.SelectTab(tpUsuarios);
+            usuarios = new Usuarios();
+            usuarios.Dock = DockStyle.Fill;
+            tpUsuarios.Controls.Add(usuarios);
         }
     }
 }
