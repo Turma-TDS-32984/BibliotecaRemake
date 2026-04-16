@@ -17,6 +17,7 @@ namespace BibliotecaRemake
         private Erros erros;
         private Livros livros;
         private Usuarios usuarios;
+        private Funcionario funcionarios;
         public Form1()
         {
             InitializeComponent();
@@ -81,6 +82,17 @@ namespace BibliotecaRemake
             usuarios = new Usuarios();
             usuarios.Dock = DockStyle.Fill;
             tpUsuarios.Controls.Add(usuarios);
+        }
+
+        private void btnFuncionario_Click(object sender, EventArgs e)
+        {
+            MudarCorDeButton();
+            btnFuncionario.FillColor = Color.FromArgb(200, 200, 200);
+            btnFuncionario.ForeColor = Color.FromArgb(0, 0, 0);
+            tcControle.SelectTab(tpFuncionario);
+            funcionarios = new Funcionario();
+            funcionarios.Dock = DockStyle.Fill;
+            tpFuncionario.Controls.Add(funcionarios);
         }
     }
 }
