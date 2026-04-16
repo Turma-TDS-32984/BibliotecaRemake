@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BibliotecaRemake.BibliotecaDBDataSetTableAdapters;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,10 @@ namespace BibliotecaRemake
         public Usuarios()
         {
             InitializeComponent();
+            UsuariosTableAdapter UsuariosDados = new UsuariosTableAdapter();
+            var dados = from linha in UsuariosDados.GetData()
+                        select linha;
+            foreach (var dado in dados) lboUsuarios.Items.Add(dado);
         }
 
     }

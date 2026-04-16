@@ -82,6 +82,7 @@
             this.btnLimpar.TabIndex = 55;
             this.btnLimpar.Text = "Limpar seleção";
             this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // lboLivros
             // 
@@ -96,6 +97,7 @@
             this.lboLivros.Name = "lboLivros";
             this.lboLivros.Size = new System.Drawing.Size(474, 126);
             this.lboLivros.TabIndex = 45;
+            this.lboLivros.SelectedIndexChanged += new System.EventHandler(this.lboLivros_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -119,6 +121,7 @@
             this.txtPesquisa.Name = "txtPesquisa";
             this.txtPesquisa.Size = new System.Drawing.Size(474, 15);
             this.txtPesquisa.TabIndex = 57;
+            this.txtPesquisa.TextChanged += new System.EventHandler(this.txtPesquisa_TextChanged);
             // 
             // tableLayoutPanel1
             // 
@@ -234,6 +237,7 @@
             this.btnAcoes.TabIndex = 72;
             this.btnAcoes.Text = "Atualizar Lista";
             this.btnAcoes.UseVisualStyleBackColor = true;
+            this.btnAcoes.Click += new System.EventHandler(this.btnAcoes_Click);
             // 
             // btnAjuste
             // 
@@ -249,6 +253,7 @@
             this.btnAjuste.TabIndex = 71;
             this.btnAjuste.Text = "Cadastrar";
             this.btnAjuste.UseVisualStyleBackColor = true;
+            this.btnAjuste.Click += new System.EventHandler(this.btnAjuste_Click);
             // 
             // label1
             // 
