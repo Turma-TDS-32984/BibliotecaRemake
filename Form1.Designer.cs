@@ -29,25 +29,25 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tcControle = new MaterialSkin.Controls.MaterialTabControl();
+            this.tpTelaPrincipal = new System.Windows.Forms.TabPage();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tpLivro = new System.Windows.Forms.TabPage();
+            this.tpFuncionario = new System.Windows.Forms.TabPage();
+            this.tpEmprestimo = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnUsuario = new Siticone.Desktop.UI.WinForms.SiticoneButton();
             this.btnEmprestimo = new Siticone.Desktop.UI.WinForms.SiticoneButton();
             this.btnFuncionario = new Siticone.Desktop.UI.WinForms.SiticoneButton();
             this.btnLivro = new Siticone.Desktop.UI.WinForms.SiticoneButton();
             this.btnPrincipal = new Siticone.Desktop.UI.WinForms.SiticoneButton();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tpEmprestimo = new System.Windows.Forms.TabPage();
-            this.tpFuncionario = new System.Windows.Forms.TabPage();
-            this.tpLivro = new System.Windows.Forms.TabPage();
-            this.tpTelaPrincipal = new System.Windows.Forms.TabPage();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tcControle = new MaterialSkin.Controls.MaterialTabControl();
             this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
+            this.tcControle.SuspendLayout();
             this.tpTelaPrincipal.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.tcControle.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -62,8 +62,97 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(981, 703);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(785, 562);
             this.tableLayoutPanel1.TabIndex = 1;
+            // 
+            // tcControle
+            // 
+            this.tcControle.Controls.Add(this.tpTelaPrincipal);
+            this.tcControle.Controls.Add(this.tpLivro);
+            this.tcControle.Controls.Add(this.tpFuncionario);
+            this.tcControle.Controls.Add(this.tpEmprestimo);
+            this.tcControle.Controls.Add(this.tabPage4);
+            this.tcControle.Depth = 0;
+            this.tcControle.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tcControle.Location = new System.Drawing.Point(3, 35);
+            this.tcControle.MouseState = MaterialSkin.MouseState.HOVER;
+            this.tcControle.Name = "tcControle";
+            this.tcControle.SelectedIndex = 0;
+            this.tcControle.Size = new System.Drawing.Size(779, 665);
+            this.tcControle.TabIndex = 0;
+            // 
+            // tpTelaPrincipal
+            // 
+            this.tpTelaPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.tpTelaPrincipal.Controls.Add(this.panel1);
+            this.tpTelaPrincipal.Location = new System.Drawing.Point(4, 25);
+            this.tpTelaPrincipal.Name = "tpTelaPrincipal";
+            this.tpTelaPrincipal.Padding = new System.Windows.Forms.Padding(3);
+            this.tpTelaPrincipal.Size = new System.Drawing.Size(771, 636);
+            this.tpTelaPrincipal.TabIndex = 0;
+            this.tpTelaPrincipal.Text = "Tela Principal";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(765, 630);
+            this.panel1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(765, 630);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Seja bem-vindo ao NossaBiblioteca";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tpLivro
+            // 
+            this.tpLivro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.tpLivro.Location = new System.Drawing.Point(4, 25);
+            this.tpLivro.Name = "tpLivro";
+            this.tpLivro.Padding = new System.Windows.Forms.Padding(3);
+            this.tpLivro.Size = new System.Drawing.Size(967, 636);
+            this.tpLivro.TabIndex = 2;
+            this.tpLivro.Text = "Livro";
+            // 
+            // tpFuncionario
+            // 
+            this.tpFuncionario.Location = new System.Drawing.Point(4, 25);
+            this.tpFuncionario.Name = "tpFuncionario";
+            this.tpFuncionario.Padding = new System.Windows.Forms.Padding(3);
+            this.tpFuncionario.Size = new System.Drawing.Size(967, 636);
+            this.tpFuncionario.TabIndex = 3;
+            this.tpFuncionario.Text = "Funcionario";
+            this.tpFuncionario.UseVisualStyleBackColor = true;
+            // 
+            // tpEmprestimo
+            // 
+            this.tpEmprestimo.Location = new System.Drawing.Point(4, 25);
+            this.tpEmprestimo.Name = "tpEmprestimo";
+            this.tpEmprestimo.Padding = new System.Windows.Forms.Padding(3);
+            this.tpEmprestimo.Size = new System.Drawing.Size(967, 636);
+            this.tpEmprestimo.TabIndex = 4;
+            this.tpEmprestimo.Text = "Emprestimo";
+            this.tpEmprestimo.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(967, 636);
+            this.tabPage4.TabIndex = 5;
+            this.tabPage4.Text = "tabPage4";
+            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel2
             // 
@@ -84,7 +173,7 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(975, 26);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(779, 26);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // btnUsuario
@@ -100,11 +189,12 @@
             this.btnUsuario.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.btnUsuario.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.btnUsuario.ForeColor = System.Drawing.Color.White;
-            this.btnUsuario.Location = new System.Drawing.Point(783, 3);
+            this.btnUsuario.Location = new System.Drawing.Point(623, 3);
             this.btnUsuario.Name = "btnUsuario";
-            this.btnUsuario.Size = new System.Drawing.Size(189, 20);
+            this.btnUsuario.Size = new System.Drawing.Size(153, 20);
             this.btnUsuario.TabIndex = 5;
             this.btnUsuario.Text = "😀Usuario";
+            this.btnUsuario.Click += new System.EventHandler(this.btnUsuario_Click);
             // 
             // btnEmprestimo
             // 
@@ -119,11 +209,12 @@
             this.btnEmprestimo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.btnEmprestimo.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.btnEmprestimo.ForeColor = System.Drawing.Color.White;
-            this.btnEmprestimo.Location = new System.Drawing.Point(588, 3);
+            this.btnEmprestimo.Location = new System.Drawing.Point(468, 3);
             this.btnEmprestimo.Name = "btnEmprestimo";
-            this.btnEmprestimo.Size = new System.Drawing.Size(189, 20);
+            this.btnEmprestimo.Size = new System.Drawing.Size(149, 20);
             this.btnEmprestimo.TabIndex = 4;
             this.btnEmprestimo.Text = "✔️ Emprestimo";
+            this.btnEmprestimo.Click += new System.EventHandler(this.btnEmprestimo_Click);
             // 
             // btnFuncionario
             // 
@@ -138,11 +229,12 @@
             this.btnFuncionario.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.btnFuncionario.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.btnFuncionario.ForeColor = System.Drawing.Color.White;
-            this.btnFuncionario.Location = new System.Drawing.Point(393, 3);
+            this.btnFuncionario.Location = new System.Drawing.Point(313, 3);
             this.btnFuncionario.Name = "btnFuncionario";
-            this.btnFuncionario.Size = new System.Drawing.Size(189, 20);
+            this.btnFuncionario.Size = new System.Drawing.Size(149, 20);
             this.btnFuncionario.TabIndex = 3;
             this.btnFuncionario.Text = "🙍Funcionário";
+            this.btnFuncionario.Click += new System.EventHandler(this.btnFuncionario_Click);
             // 
             // btnLivro
             // 
@@ -158,9 +250,9 @@
             this.btnLivro.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.btnLivro.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.btnLivro.ForeColor = System.Drawing.Color.White;
-            this.btnLivro.Location = new System.Drawing.Point(198, 3);
+            this.btnLivro.Location = new System.Drawing.Point(158, 3);
             this.btnLivro.Name = "btnLivro";
-            this.btnLivro.Size = new System.Drawing.Size(189, 20);
+            this.btnLivro.Size = new System.Drawing.Size(149, 20);
             this.btnLivro.TabIndex = 2;
             this.btnLivro.Text = "📔 Livros";
             this.btnLivro.Click += new System.EventHandler(this.btnLivro_Click);
@@ -180,99 +272,10 @@
             this.btnPrincipal.ForeColor = System.Drawing.Color.Black;
             this.btnPrincipal.Location = new System.Drawing.Point(3, 3);
             this.btnPrincipal.Name = "btnPrincipal";
-            this.btnPrincipal.Size = new System.Drawing.Size(189, 20);
+            this.btnPrincipal.Size = new System.Drawing.Size(149, 20);
             this.btnPrincipal.TabIndex = 1;
             this.btnPrincipal.Text = "🏠 Home";
             this.btnPrincipal.Click += new System.EventHandler(this.btnPrincipal_Click);
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 29);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(568, 282);
-            this.tabPage4.TabIndex = 5;
-            this.tabPage4.Text = "tabPage4";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // tpEmprestimo
-            // 
-            this.tpEmprestimo.Location = new System.Drawing.Point(4, 29);
-            this.tpEmprestimo.Name = "tpEmprestimo";
-            this.tpEmprestimo.Padding = new System.Windows.Forms.Padding(3);
-            this.tpEmprestimo.Size = new System.Drawing.Size(568, 282);
-            this.tpEmprestimo.TabIndex = 4;
-            this.tpEmprestimo.Text = "Emprestimo";
-            this.tpEmprestimo.UseVisualStyleBackColor = true;
-            // 
-            // tpFuncionario
-            // 
-            this.tpFuncionario.Location = new System.Drawing.Point(4, 29);
-            this.tpFuncionario.Name = "tpFuncionario";
-            this.tpFuncionario.Padding = new System.Windows.Forms.Padding(3);
-            this.tpFuncionario.Size = new System.Drawing.Size(568, 282);
-            this.tpFuncionario.TabIndex = 3;
-            this.tpFuncionario.Text = "Funcionario";
-            this.tpFuncionario.UseVisualStyleBackColor = true;
-            // 
-            // tpLivro
-            // 
-            this.tpLivro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.tpLivro.Location = new System.Drawing.Point(4, 29);
-            this.tpLivro.Name = "tpLivro";
-            this.tpLivro.Padding = new System.Windows.Forms.Padding(3);
-            this.tpLivro.Size = new System.Drawing.Size(568, 282);
-            this.tpLivro.TabIndex = 2;
-            this.tpLivro.Text = "Livro";
-            // 
-            // tpTelaPrincipal
-            // 
-            this.tpTelaPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.tpTelaPrincipal.Controls.Add(this.panel1);
-            this.tpTelaPrincipal.Location = new System.Drawing.Point(4, 29);
-            this.tpTelaPrincipal.Name = "tpTelaPrincipal";
-            this.tpTelaPrincipal.Padding = new System.Windows.Forms.Padding(3);
-            this.tpTelaPrincipal.Size = new System.Drawing.Size(967, 632);
-            this.tpTelaPrincipal.TabIndex = 0;
-            this.tpTelaPrincipal.Text = "Tela Principal";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(961, 626);
-            this.panel1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(961, 626);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Seja bem-vindo ao NossaBiblioteca";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tcControle
-            // 
-            this.tcControle.Controls.Add(this.tpTelaPrincipal);
-            this.tcControle.Controls.Add(this.tpLivro);
-            this.tcControle.Controls.Add(this.tpFuncionario);
-            this.tcControle.Controls.Add(this.tpEmprestimo);
-            this.tcControle.Controls.Add(this.tabPage4);
-            this.tcControle.Depth = 0;
-            this.tcControle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tcControle.Location = new System.Drawing.Point(3, 35);
-            this.tcControle.MouseState = MaterialSkin.MouseState.HOVER;
-            this.tcControle.Name = "tcControle";
-            this.tcControle.SelectedIndex = 0;
-            this.tcControle.Size = new System.Drawing.Size(975, 665);
-            this.tcControle.TabIndex = 0;
             // 
             // Form1
             // 
@@ -283,10 +286,10 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tcControle.ResumeLayout(false);
             this.tpTelaPrincipal.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.tcControle.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

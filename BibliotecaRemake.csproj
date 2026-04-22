@@ -52,6 +52,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BibliotecaDBDataSet.cs">
+      <DependentUpon>BibliotecaDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BibliotecaDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BibliotecaDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Emprestimo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Emprestimo.Designer.cs">
+      <DependentUpon>Emprestimo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Erros.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -72,6 +86,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Emprestimo.resx">
+      <DependentUpon>Emprestimo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Erros.resx">
       <DependentUpon>Erros.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,6 +107,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="BibliotecaDBDataSet.xsc">
+      <DependentUpon>BibliotecaDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BibliotecaDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BibliotecaDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BibliotecaDBDataSet.xss">
+      <DependentUpon>BibliotecaDBDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
