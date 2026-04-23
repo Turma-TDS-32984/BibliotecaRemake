@@ -44,85 +44,98 @@
             // lboLivros
             // 
             this.lboLivros.FormattingEnabled = true;
-            this.lboLivros.ItemHeight = 16;
-            this.lboLivros.Location = new System.Drawing.Point(38, 129);
+            this.lboLivros.Location = new System.Drawing.Point(28, 105);
+            this.lboLivros.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lboLivros.Name = "lboLivros";
-            this.lboLivros.Size = new System.Drawing.Size(215, 84);
+            this.lboLivros.Size = new System.Drawing.Size(162, 69);
             this.lboLivros.TabIndex = 0;
             // 
             // lboUsuarios
             // 
             this.lboUsuarios.FormattingEnabled = true;
-            this.lboUsuarios.ItemHeight = 16;
-            this.lboUsuarios.Location = new System.Drawing.Point(326, 129);
+            this.lboUsuarios.Location = new System.Drawing.Point(244, 105);
+            this.lboUsuarios.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lboUsuarios.Name = "lboUsuarios";
-            this.lboUsuarios.Size = new System.Drawing.Size(259, 84);
+            this.lboUsuarios.Size = new System.Drawing.Size(195, 69);
             this.lboUsuarios.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(35, 0);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(26, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(182, 19);
+            this.label1.Size = new System.Drawing.Size(122, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Selecione quem é você:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(323, 110);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(242, 89);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 19);
+            this.label2.Size = new System.Drawing.Size(48, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Usuarios";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(35, 110);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(26, 89);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 19);
+            this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 4;
             this.label3.Text = "Livros";
             // 
             // txtLivros
             // 
-            this.txtLivros.Location = new System.Drawing.Point(38, 85);
+            this.txtLivros.Location = new System.Drawing.Point(28, 69);
+            this.txtLivros.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtLivros.Name = "txtLivros";
-            this.txtLivros.Size = new System.Drawing.Size(215, 22);
+            this.txtLivros.Size = new System.Drawing.Size(162, 20);
             this.txtLivros.TabIndex = 6;
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(326, 85);
+            this.txtUsuario.Location = new System.Drawing.Point(244, 69);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(259, 22);
+            this.txtUsuario.Size = new System.Drawing.Size(195, 20);
             this.txtUsuario.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(35, 66);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(26, 54);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(218, 19);
+            this.label4.Size = new System.Drawing.Size(146, 13);
             this.label4.TabIndex = 8;
             this.label4.Text = "Digite um livro para consultar:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(323, 66);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(242, 54);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(187, 19);
+            this.label5.Size = new System.Drawing.Size(125, 13);
             this.label5.TabIndex = 9;
             this.label5.Text = "Digite o nome do Cliente:";
             // 
             // btnEmprestar
             // 
-            this.btnEmprestar.Location = new System.Drawing.Point(38, 219);
+            this.btnEmprestar.Location = new System.Drawing.Point(28, 178);
+            this.btnEmprestar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEmprestar.Name = "btnEmprestar";
-            this.btnEmprestar.Size = new System.Drawing.Size(547, 23);
+            this.btnEmprestar.Size = new System.Drawing.Size(410, 19);
             this.btnEmprestar.TabIndex = 10;
             this.btnEmprestar.Text = "Emprestar";
             this.btnEmprestar.UseVisualStyleBackColor = true;
@@ -131,14 +144,15 @@
             // cboFuncionarios
             // 
             this.cboFuncionarios.FormattingEnabled = true;
-            this.cboFuncionarios.Location = new System.Drawing.Point(38, 22);
+            this.cboFuncionarios.Location = new System.Drawing.Point(28, 18);
+            this.cboFuncionarios.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboFuncionarios.Name = "cboFuncionarios";
-            this.cboFuncionarios.Size = new System.Drawing.Size(547, 24);
+            this.cboFuncionarios.Size = new System.Drawing.Size(411, 21);
             this.cboFuncionarios.TabIndex = 11;
             // 
             // Emprestimo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.cboFuncionarios);
             this.Controls.Add(this.btnEmprestar);
@@ -151,8 +165,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lboUsuarios);
             this.Controls.Add(this.lboLivros);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Emprestimo";
-            this.Size = new System.Drawing.Size(664, 264);
+            this.Size = new System.Drawing.Size(498, 214);
             this.ResumeLayout(false);
             this.PerformLayout();
 

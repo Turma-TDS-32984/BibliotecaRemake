@@ -36,6 +36,18 @@
             this.tpLivro = new System.Windows.Forms.TabPage();
             this.tpFuncionario = new System.Windows.Forms.TabPage();
             this.tpEmprestimo = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.tcEmprestimo = new MaterialSkin.Controls.MaterialTabControl();
+            this.tpEPrincipal = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tpEmprestando = new System.Windows.Forms.TabPage();
+            this.tpDevolvendo = new System.Windows.Forms.TabPage();
+            this.tpConsultar = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnDevolver = new System.Windows.Forms.Button();
+            this.btnEmprestar = new System.Windows.Forms.Button();
+            this.btnEmprestimos = new System.Windows.Forms.Button();
+            this.btnSelecionar = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnUsuario = new Siticone.Desktop.UI.WinForms.SiticoneButton();
@@ -47,6 +59,11 @@
             this.tcControle.SuspendLayout();
             this.tpTelaPrincipal.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.tpEmprestimo.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.tcEmprestimo.SuspendLayout();
+            this.tpEPrincipal.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,10 +102,10 @@
             // 
             this.tpTelaPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.tpTelaPrincipal.Controls.Add(this.panel1);
-            this.tpTelaPrincipal.Location = new System.Drawing.Point(4, 25);
+            this.tpTelaPrincipal.Location = new System.Drawing.Point(4, 22);
             this.tpTelaPrincipal.Name = "tpTelaPrincipal";
             this.tpTelaPrincipal.Padding = new System.Windows.Forms.Padding(3);
-            this.tpTelaPrincipal.Size = new System.Drawing.Size(771, 636);
+            this.tpTelaPrincipal.Size = new System.Drawing.Size(771, 639);
             this.tpTelaPrincipal.TabIndex = 0;
             this.tpTelaPrincipal.Text = "Tela Principal";
             // 
@@ -98,7 +115,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(765, 630);
+            this.panel1.Size = new System.Drawing.Size(765, 633);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -109,7 +126,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(765, 630);
+            this.label1.Size = new System.Drawing.Size(765, 633);
             this.label1.TabIndex = 1;
             this.label1.Text = "Seja bem-vindo ao NossaBiblioteca";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -117,39 +134,203 @@
             // tpLivro
             // 
             this.tpLivro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.tpLivro.Location = new System.Drawing.Point(4, 25);
+            this.tpLivro.Location = new System.Drawing.Point(4, 22);
             this.tpLivro.Name = "tpLivro";
             this.tpLivro.Padding = new System.Windows.Forms.Padding(3);
-            this.tpLivro.Size = new System.Drawing.Size(967, 636);
+            this.tpLivro.Size = new System.Drawing.Size(771, 639);
             this.tpLivro.TabIndex = 2;
             this.tpLivro.Text = "Livro";
             // 
             // tpFuncionario
             // 
-            this.tpFuncionario.Location = new System.Drawing.Point(4, 25);
+            this.tpFuncionario.Location = new System.Drawing.Point(4, 22);
             this.tpFuncionario.Name = "tpFuncionario";
             this.tpFuncionario.Padding = new System.Windows.Forms.Padding(3);
-            this.tpFuncionario.Size = new System.Drawing.Size(967, 636);
+            this.tpFuncionario.Size = new System.Drawing.Size(771, 639);
             this.tpFuncionario.TabIndex = 3;
             this.tpFuncionario.Text = "Funcionario";
             this.tpFuncionario.UseVisualStyleBackColor = true;
             // 
             // tpEmprestimo
             // 
-            this.tpEmprestimo.Location = new System.Drawing.Point(4, 25);
+            this.tpEmprestimo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.tpEmprestimo.Controls.Add(this.tableLayoutPanel3);
+            this.tpEmprestimo.Location = new System.Drawing.Point(4, 22);
             this.tpEmprestimo.Name = "tpEmprestimo";
             this.tpEmprestimo.Padding = new System.Windows.Forms.Padding(3);
-            this.tpEmprestimo.Size = new System.Drawing.Size(967, 636);
+            this.tpEmprestimo.Size = new System.Drawing.Size(771, 639);
             this.tpEmprestimo.TabIndex = 4;
             this.tpEmprestimo.Text = "Emprestimo";
-            this.tpEmprestimo.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel3.ColumnCount = 1;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Controls.Add(this.tcEmprestimo, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel4, 0, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 2;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.897315F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 95.10268F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(765, 633);
+            this.tableLayoutPanel3.TabIndex = 1;
+            // 
+            // tcEmprestimo
+            // 
+            this.tcEmprestimo.Controls.Add(this.tpEPrincipal);
+            this.tcEmprestimo.Controls.Add(this.tpEmprestando);
+            this.tcEmprestimo.Controls.Add(this.tpDevolvendo);
+            this.tcEmprestimo.Controls.Add(this.tpConsultar);
+            this.tcEmprestimo.Depth = 0;
+            this.tcEmprestimo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tcEmprestimo.Location = new System.Drawing.Point(3, 34);
+            this.tcEmprestimo.MouseState = MaterialSkin.MouseState.HOVER;
+            this.tcEmprestimo.Name = "tcEmprestimo";
+            this.tcEmprestimo.SelectedIndex = 0;
+            this.tcEmprestimo.Size = new System.Drawing.Size(759, 596);
+            this.tcEmprestimo.TabIndex = 0;
+            // 
+            // tpEPrincipal
+            // 
+            this.tpEPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.tpEPrincipal.Controls.Add(this.label2);
+            this.tpEPrincipal.Location = new System.Drawing.Point(4, 22);
+            this.tpEPrincipal.Name = "tpEPrincipal";
+            this.tpEPrincipal.Padding = new System.Windows.Forms.Padding(3);
+            this.tpEPrincipal.Size = new System.Drawing.Size(751, 570);
+            this.tpEPrincipal.TabIndex = 0;
+            this.tpEPrincipal.Text = "Principal";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 34F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(96, 153);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(603, 53);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Selecione uma opção acima";
+            // 
+            // tpEmprestando
+            // 
+            this.tpEmprestando.BackColor = System.Drawing.Color.Black;
+            this.tpEmprestando.Location = new System.Drawing.Point(4, 22);
+            this.tpEmprestando.Name = "tpEmprestando";
+            this.tpEmprestando.Padding = new System.Windows.Forms.Padding(3);
+            this.tpEmprestando.Size = new System.Drawing.Size(751, 570);
+            this.tpEmprestando.TabIndex = 1;
+            this.tpEmprestando.Text = "Emprestar";
+            // 
+            // tpDevolvendo
+            // 
+            this.tpDevolvendo.BackColor = System.Drawing.Color.Black;
+            this.tpDevolvendo.Location = new System.Drawing.Point(4, 22);
+            this.tpDevolvendo.Name = "tpDevolvendo";
+            this.tpDevolvendo.Padding = new System.Windows.Forms.Padding(3);
+            this.tpDevolvendo.Size = new System.Drawing.Size(751, 570);
+            this.tpDevolvendo.TabIndex = 2;
+            this.tpDevolvendo.Text = "Devolver";
+            // 
+            // tpConsultar
+            // 
+            this.tpConsultar.BackColor = System.Drawing.Color.Black;
+            this.tpConsultar.Location = new System.Drawing.Point(4, 22);
+            this.tpConsultar.Name = "tpConsultar";
+            this.tpConsultar.Padding = new System.Windows.Forms.Padding(3);
+            this.tpConsultar.Size = new System.Drawing.Size(751, 570);
+            this.tpConsultar.TabIndex = 3;
+            this.tpConsultar.Text = "Consultar";
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.BackColor = System.Drawing.Color.DarkGray;
+            this.tableLayoutPanel4.ColumnCount = 4;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel4.Controls.Add(this.btnDevolver, 3, 0);
+            this.tableLayoutPanel4.Controls.Add(this.btnEmprestar, 2, 0);
+            this.tableLayoutPanel4.Controls.Add(this.btnEmprestimos, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.btnSelecionar, 0, 0);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 1;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(759, 25);
+            this.tableLayoutPanel4.TabIndex = 1;
+            // 
+            // btnDevolver
+            // 
+            this.btnDevolver.BackColor = System.Drawing.Color.DimGray;
+            this.btnDevolver.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnDevolver.FlatAppearance.BorderSize = 0;
+            this.btnDevolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDevolver.ForeColor = System.Drawing.Color.White;
+            this.btnDevolver.Location = new System.Drawing.Point(570, 3);
+            this.btnDevolver.Name = "btnDevolver";
+            this.btnDevolver.Size = new System.Drawing.Size(186, 19);
+            this.btnDevolver.TabIndex = 3;
+            this.btnDevolver.Text = "Devolver";
+            this.btnDevolver.UseVisualStyleBackColor = false;
+            // 
+            // btnEmprestar
+            // 
+            this.btnEmprestar.BackColor = System.Drawing.Color.DimGray;
+            this.btnEmprestar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnEmprestar.FlatAppearance.BorderSize = 0;
+            this.btnEmprestar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEmprestar.ForeColor = System.Drawing.Color.White;
+            this.btnEmprestar.Location = new System.Drawing.Point(381, 3);
+            this.btnEmprestar.Name = "btnEmprestar";
+            this.btnEmprestar.Size = new System.Drawing.Size(183, 19);
+            this.btnEmprestar.TabIndex = 2;
+            this.btnEmprestar.Text = "Emprestar";
+            this.btnEmprestar.UseVisualStyleBackColor = false;
+            this.btnEmprestar.Click += new System.EventHandler(this.btnEmprestar_Click);
+            // 
+            // btnEmprestimos
+            // 
+            this.btnEmprestimos.BackColor = System.Drawing.Color.DimGray;
+            this.btnEmprestimos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnEmprestimos.FlatAppearance.BorderSize = 0;
+            this.btnEmprestimos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEmprestimos.ForeColor = System.Drawing.Color.White;
+            this.btnEmprestimos.Location = new System.Drawing.Point(192, 3);
+            this.btnEmprestimos.Name = "btnEmprestimos";
+            this.btnEmprestimos.Size = new System.Drawing.Size(183, 19);
+            this.btnEmprestimos.TabIndex = 1;
+            this.btnEmprestimos.Text = "Consultar";
+            this.btnEmprestimos.UseVisualStyleBackColor = false;
+            this.btnEmprestimos.Click += new System.EventHandler(this.btnEmprestimos_Click);
+            // 
+            // btnSelecionar
+            // 
+            this.btnSelecionar.BackColor = System.Drawing.Color.DimGray;
+            this.btnSelecionar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSelecionar.FlatAppearance.BorderSize = 0;
+            this.btnSelecionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelecionar.ForeColor = System.Drawing.Color.White;
+            this.btnSelecionar.Location = new System.Drawing.Point(3, 3);
+            this.btnSelecionar.Name = "btnSelecionar";
+            this.btnSelecionar.Size = new System.Drawing.Size(183, 19);
+            this.btnSelecionar.TabIndex = 0;
+            this.btnSelecionar.Text = "Selecionar";
+            this.btnSelecionar.UseVisualStyleBackColor = false;
+            this.btnSelecionar.Click += new System.EventHandler(this.btnSelecionar_Click);
             // 
             // tabPage4
             // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(967, 636);
+            this.tabPage4.Size = new System.Drawing.Size(771, 639);
             this.tabPage4.TabIndex = 5;
             this.tabPage4.Text = "tabPage4";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -289,6 +470,12 @@
             this.tcControle.ResumeLayout(false);
             this.tpTelaPrincipal.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.tpEmprestimo.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tcEmprestimo.ResumeLayout(false);
+            this.tpEPrincipal.ResumeLayout(false);
+            this.tpEPrincipal.PerformLayout();
+            this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -310,6 +497,18 @@
         private System.Windows.Forms.TabPage tpFuncionario;
         private System.Windows.Forms.TabPage tpEmprestimo;
         private System.Windows.Forms.TabPage tabPage4;
+        private MaterialSkin.Controls.MaterialTabControl tcEmprestimo;
+        private System.Windows.Forms.TabPage tpEPrincipal;
+        private System.Windows.Forms.TabPage tpEmprestando;
+        private System.Windows.Forms.TabPage tpDevolvendo;
+        private System.Windows.Forms.TabPage tpConsultar;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.Button btnSelecionar;
+        private System.Windows.Forms.Button btnDevolver;
+        private System.Windows.Forms.Button btnEmprestar;
+        private System.Windows.Forms.Button btnEmprestimos;
+        private System.Windows.Forms.Label label2;
     }
 }
 

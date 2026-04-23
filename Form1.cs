@@ -17,6 +17,7 @@ namespace BibliotecaRemake
         private Erros erros;
         private Livros livros;
         private Emprestimo emprestimo;
+        private Consulta consulta;
         public Form1()
         {
             InitializeComponent();
@@ -83,16 +84,35 @@ namespace BibliotecaRemake
             btnEmprestimo.FillColor = Color.FromArgb(200, 200, 200);
             btnEmprestimo.ForeColor = Color.FromArgb(0, 0, 0);
             tcControle.SelectTab(tpEmprestimo);
+        }
+
+        private void btnEmprestar_Click(object sender, EventArgs e)
+        {
+            if (emprestimo != null) emprestimo.Dispose();
+            emprestimo = null;
             emprestimo = new Emprestimo();
             emprestimo.Dock = DockStyle.Fill;
-            tpEmprestimo.Controls.Add(emprestimo);
-            //Localiza o botao btnErro, verifica se existe, se existir, retorna o primeiro e adiciona a funçao de click
+            tcEmprestimo.SelectTab(tpEmprestando);
+            tpEmprestando.Controls.Add(emprestimo);
+        }
 
+        private void btnSelecionar_Click(object sender, EventArgs e)
+        {
+            tcEmprestimo.SelectTab(tpEPrincipal);
         }
 
         private void btnUsuario_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnEmprestimos_Click(object sender, EventArgs e)
+        {
+            if (consulta != null) consulta.Dispose();
+            consulta = null;
+            consulta = new Consulta();
+            tpConsultar.Controls.Add(consulta);
+            tcEmprestimo.SelectTab(tpConsultar);
         }
     }
 }
